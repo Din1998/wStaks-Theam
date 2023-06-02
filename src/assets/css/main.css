@@ -44,9 +44,9 @@
     --base-light-l: 50%;
     --base-light: var(--base-light-h) var(--base-light-s) var(--base-light-l);
   /*========================= Base Color =============================*/
-    --base-h: 197;
-    --base-s: 77%;
-    --base-l: 57%;
+    --base-h: 55;
+    --base-s: 100%;
+    --base-l: 47%;
     --base: var(--base-h) var(--base-s) var(--base-l);
   /*== Base Darken ==*/
     --base-d-100: var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.1);
@@ -1664,11 +1664,11 @@ h6 {
 
 @media screen and (max-width: 767px) {
     h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
         margin: 0 0 10px 0;
     }
 }
@@ -3510,7 +3510,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     position: absolute;
     width: 110px;
     height: 110px;
-    background: #0d6efd;
+    background: rgb(13, 110, 253);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     border-radius: 100%;
@@ -4155,9 +4155,7 @@ select.form-control.form--control:has(option) ~ .form--label {
         color: hsl(var(--white));
         background-color: hsl(var(--base));
     }
-}
 
-@media (min-width: 992px) {
     .nav-menu .nav-item .btn.btn--base {
         margin-top: 23px;
     }
@@ -4363,7 +4361,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .header-wrapper .logo-wrapper img {
-    width: 160px;
+    width: 100px;
     filter: brightness(1);
 }
 
@@ -4405,7 +4403,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .header-wrapper .menu-wrapper ul.main-menu a {
     padding: 0px 20px;
-    font-weight: 700;
+    font-weight: 400;
     color: hsl(var(--black));
 }
 

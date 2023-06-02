@@ -60,9 +60,9 @@
 
     /*========================= Base Color =============================*/
 
-    --base-h: 197;
-    --base-s: 77%;
-    --base-l: 57%;
+    --base-h: 55;
+    --base-s: 100%;
+    --base-l: 47%;
     --base: var(--base-h) var(--base-s) var(--base-l);
     /*== Base Darken ==*/
     --base-d-100: var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.1);

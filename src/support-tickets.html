@@ -58,6 +58,7 @@
 
 
 
+<!-- ==================== Header tart Here ==================== -->
 <!--========================== Header section Start ==========================-->
 <div class="header-main-area">
 
@@ -193,6 +194,7 @@
     </ul>
 </div>
 <!--========================== Sidebar mobile menu wrap End ==========================-->
+<!-- ==================== Header End Here ==================== -->
 
 <!-- ==================== Breadcumb Start Here ==================== -->
 <section class="breadcumb ">
@@ -201,11 +203,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcumb__wrapper">
-                    <h2 class="breadcumb__title">Registration </h2>
+                    <h2 class="breadcumb__title">Support Tickets </h2>
                     <ul class="breadcumb__list">
                         <li class="breadcumb__item"><a href="index.html" class="breadcumb__link"> <i class="las la-home"></i> Home</a> </li>
                         <li class="breadcumb__item"><i class="fas fa-arrow-right"></i></li>
-                        <li class="breadcumb__item"> <span class="breadcumb__item-text"> Registration </span> </li>
+                        <li class="breadcumb__item"> <span class="breadcumb__item-text"> Support Tickets </span> </li>
                     </ul>
                 </div>
             </div>
@@ -214,104 +216,139 @@
 </section>
 <!-- ==================== Breadcumb End Here ==================== -->
 
-<!-- Registration Start Here  -->
-<section class="account py-80 position-relative">
-    <div class="account-inner">
-        <div class="container">
-            <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                    <div class="account-form">
-                        <div class="account-form__content mb-4">
-                            <h3 class="account-form__title mb-2"> Sign Up Your Account </h3>
-                            <p class="account-form__desc">Please Provide your valid informations to register!</p>
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard py-80 section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 pe-xl-4">
+                <div class="dashboard_profile">
+    <div class="dashboard_profile__details">
+        <div class="sidebar-menu">
+            <span class="sidebar-menu__close"><i class="las la-times"></i></span>
+            <ul class="sidebar-menu-list">
+                
+                <div class="dashboard_profile_wrap">
+                    <div class="profile_photo">
+                        <img src="assets/images/thumbs/team-01.jpg" alt="agent">
+                        <div class="photo_upload">
+                            <label for="file_upload"><i class="fa-regular fa-image"></i></label>
+                            <input id="file_upload" type="file" class="upload_file">
                         </div>
-                        <form action="#" method="POST">
-                            <div class="row gy-3">
-                                <div class="col-sm-6">
-                                     <div class="form-group">
-                                        <label for="name" class="form--label"> Name</label>
-                                        <input type="text" class="form--control" id="name" placeholder=" Name">
-                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                     <div class="form-group">
-                                        <label for="username" class="form--label">User Name</label>
-                                        <input type="text" class="form--control" id="username" placeholder="User Name">
-                                     </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="email" class="form--label">Email Address</label>
-                                        <input type="text" class="form--control" id="email" placeholder="Email Address">
-                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form--label">Country</label>
-                                        <div class="col-sm-12">
-                                            <select class="select form--control">
-                                                <option value="volvo">Bangladesh</option>
-                                                <option value="volvo">Usa</option>
-                                                <option value="saab">Uk</option>
-                                                <option value="mercedes">Singapure</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="input-group mb-3">
-                                        <label class="form--label">Phone</label>
-                                        <div class="input-group country-code">
-                                            <span class="input-group-text" id="basic-addon1">+880</span>
-                                            <input type="text" class="form--control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <h3 class="text-center">Obaydulla</h3>
+                </div>
+                <li class="sidebar-menu-list__item active">
+                    <a href="dashboard.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa fa-tachometer-alt"></i></span>
+                    Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-list__item">
+                    <a href="my-orders.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span class="text">My Orders</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-list__item">
+                    <a href="wishlist.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span class="text">My Wishlist</span>
+                    </a>
+                </li> 
+                <li class="sidebar-menu-list__item">
+                    <a href="transactions.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-book-atlas"></i></span>
+                    Transactions</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-list__item has-dropdown">
+                    <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span class="text">Profile</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="sidebar-submenu-list">
+                            <li class="sidebar-submenu-list__item">
+                                <a href="user-profile.html" class="sidebar-submenu-list__link">Profile Setting</a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="change-password.html" class="sidebar-submenu-list__link">Change Password </a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="two-fa-security.html" class="sidebar-submenu-list__link">2Fa Security </a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="login.html" class="sidebar-submenu-list__link">Log Out </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+            </div>
+            <div class="col-xl-9 col-lg-12">
+                <div class="dashboard-body">
+                    <div class="dashboard-body__bar">
+                        <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                    </div>
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="order-wrap">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="new-ticket text-end">
+                                            <a href="new-ticket.html" class="btn btn--base">New Ticket <i class="las la-plus"></i></a>
                                         </div>
-                                    </div> 
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="your-password" class="form--label">Password</label>
-                                    <div class="input-group">
-                                        <input id="your-password" type="password" class="form-control form--control" value="Password">
-                                        <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#your-password"></div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="confirm-password" class="form--label">Confirm Password</label>
-                                    <div class="input-group">
-                                        <input id="confirm-password" type="password" class="form-control form--control" value="Confirm Password">
-                                        <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#confirm-password"></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form--check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
-                                        <div class="form-check-label">
-                                            <label class="" for="remember"> I agree with Licences Info,</label>
-                                            <a href="terms-of-service.html" class="text--base">Terms of Service</a>
-                                            <label class="" for="remember"> , Privacy Policy </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <button type="submit" class="btn btn--base w-100">
-                                        Sign Up <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                                        <span style="top: -1px; left: 369px;"></span>
-                                    </button>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="have-account text-center">
-                                        <p class="have-account__text">Already Have An Account? <a href="login.html" class="have-account__link text--base">Login Now</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                                    <table class="table table--responsive--lg">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Status</th>
+                                                <th>Priority</th>
+                                                <th>Last Reply</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Trx">[Ticket:#97666]</td>
+                                                <td data-label="Amount"><span class="badge badge--success"> Completed </span></td>
+                                                <td data-label="Description">Low</td>
+                                                <td data-label="Amount">1 month ago</td>
+                                                <td data-label="Remaining Blance" class="text-danger cursor-pointer"><i class="las la-trash"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Trx">[Ticket:#97666]</td>
+                                                <td data-label="Amount"><span class="badge badge--success"> Completed </span></td>
+                                                <td data-label="Description">Low</td>
+                                                <td data-label="Amount">1 month ago</td>
+                                                <td data-label="Remaining Blance" class="text-danger cursor-pointer"><i class="las la-trash"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Trx">[Ticket:#97666]</td>
+                                                <td data-label="Amount"><span class="badge badge--success"> Completed </span></td>
+                                                <td data-label="Description">Low</td>
+                                                <td data-label="Amount">1 month ago</td>
+                                                <td data-label="Remaining Blance" class="text-danger cursor-pointer"><i class="las la-trash"></i> Delete</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                               </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
-</section>
-<!-- Registration End Here  -->
+</div> 
+<!-- ==================== Dashbaord End Here ==================== -->
 
 <!-- Footer -->
 
