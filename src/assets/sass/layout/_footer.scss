@@ -1,0 +1,223 @@
+
+/*============= Footer Start Here =======================*/
+.footer-area {
+    background-color: hsl(var(--base)/.2);
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+    // &::after {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: -1;
+    //     content: "";
+    //     opacity: 0.94;
+    //     background-color: hsl(var(--dark));
+    // }
+    .banner-effect-1 {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 725px;
+        height: 452px;
+        background-color: hsl(var(--base)/0.5);
+        border-radius: 0;
+        z-index: -1;
+        @include sm-screen {
+            width: 100%;
+        }
+
+    }
+}
+
+.footer-item {
+    .latest-blog__title a {
+        color: hsl(var(--white));
+    }
+    .latest-blog {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid hsl(var(--white)/0.1);
+    }
+    span.latest-blog__date {
+        color: hsl(var(--white)/.6);
+    }
+    &__desc {
+        color: hsl(var(--body-color));
+    }
+    &__logo {
+        margin-bottom: 20px;
+        a {
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 160px;
+                max-height: 64px;
+                filter: brightness(1);
+            }
+        } 
+    }
+    &__title {
+        color: hsl(var(--black));
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 3px;
+            left: 0;
+            bottom: -2px;
+            background-color: hsl(var(--base)/.4);
+        }
+    }
+    .social-list {
+        margin-top: 30px;
+        @include md-screen {
+            margin-top: 20px;
+        }
+        @include msm-screen {
+            margin-top: 15px;
+        }
+    }
+    .social-list__item .social-list__link {
+        border: 1px solid hsl(var(--base)/.2);
+        color: hsl(var(--dark));
+    }
+}
+// Footer List Item
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    margin: -5px 0;
+    &__item {
+        display: block;
+        padding: 5px 0;
+    }
+    &__link {
+        padding: 0 0 0 20px;
+        position: relative;
+        color: hsl(var(--body-color));
+        &::before {
+            position: absolute;
+            content: "\f101";
+            font-weight: 900;
+            font-family: "Line Awesome Free";
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: hsl(var(--body-color));
+            font-size: 15px;
+        }
+        &:hover {
+            color: hsl(var(--base));
+            margin-left: 4px;
+        }
+    }
+}
+
+// Footer Contact
+.footer-contact-menu {
+    margin: -6px 0;
+    &__item {
+        display: flex;
+        padding: 1px 0;
+        p { 
+            color: hsl(var(--white));
+        }
+        &-icon {
+            width: 15px;
+            color: hsl(var(--white));
+            font-size: 15px;
+        }
+        &-content {
+            width: calc(100% - 15px);
+            padding-left: 15px;
+        }
+    }
+}
+// ============= Footer End Here =======================
+
+
+.search-box.footer {
+    button {
+        position: absolute;
+        right: 9px;
+        top: 9px;
+        border: 1px solid transparent;
+    }
+    input.form--control {
+        padding-right: 135px;
+        border-radius: 10px;
+        border: 0;
+        padding: 16px;
+        color: hsl(var(--dark) );
+        &::placeholder, :focus {
+            color: hsl(var(--body-color));
+        }
+    }
+}
+
+
+
+// ============= Bottom Footer End Here =======================
+.bottom-footer {
+    background-color: hsl(var(--base)/.2);
+    border-top: 1px solid hsl(var(--white) / .01);
+    .bottom-footer-text {
+        color: hsl(var(--body-color));
+        @include md-screen {
+            text-align: center;
+        }
+        @include xsm-screen {
+            font-size: 14px;
+        }
+    }
+}
+
+.bottom-footer-menu {
+    ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+        @include md-screen {
+            justify-content: center;
+        }
+        li {
+            padding-left: 14px;
+            margin-left: 14px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                background: hsl(var(--body-color));
+                height: 5px;
+                width: 5px;
+                bottom: 6px;
+                border-radius: 50%;
+            }
+            &:first-child::after {
+                content: none;
+            }
+            a {
+                color: hsl(var(--body-color));
+                @include xsm-screen {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// =============Bottom Footer End Here =======================
+
+
+

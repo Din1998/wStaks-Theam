@@ -1,0 +1,259 @@
+/*============** Header area **============*/
+
+/*== Sticky header ==*/
+.header {
+    position: relative;
+    z-index: 5;
+    padding: 20px 0;
+    @include md-screen {
+        top: 0px;
+        padding: 10px 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 7;
+        max-height: 101vh;
+        overflow-y: auto;
+        background-color: transparent;
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 0px;
+        }
+    }
+    &.fixed-header {
+        background-color: hsl(var(--white));
+        position: fixed;
+        transition: 0.4s linear;
+        top: 0px;
+        animation: slide-down 0.8s;
+        width: 100%;
+        box-shadow: rgb(9 9 9/ 5%) 0px 1px 0px;
+        border-bottom: 1px solid hsl(var(--white)/.08);
+    }
+}
+
+.header-main-area {  
+    .container-fluid {
+        padding: 0 100px;
+        @include xl-screen {
+            padding: 0 60px;
+        }
+        @include msm-screen {
+            padding: 0 25px;
+        }
+    }
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    @include md-screen {
+        padding: 0px 0;
+    }
+    @include msm-screen {
+        padding: 0px 15px;
+    }
+    .logo-wrapper {
+        img {
+            width: 160px;
+            filter: brightness(1);
+            @include md-screen {
+                width: 160px;
+            }
+            @include xsm-screen {
+                width: 120px;
+            }
+        }
+    }
+
+    .menu-wrapper {
+        margin-left: px;
+        @include lg-screen {
+            margin-left: 0px;
+        }
+        @include md-screen {
+            display: none;
+        }
+        ul.main-menu {
+            display: flex;
+            li {
+                    transition: all .4s;
+                }
+                a {
+                    padding: 0px 20px;
+                    font-weight: 700;
+                    color: hsl(var(--black));
+                    &.active {
+                        color: hsl(var(--base));
+                    }
+                    @include lg-screen {
+                        padding: 0px 12px;
+                    }
+                    &:hover {
+                    color: hsl(var(--base));
+                }
+            }
+        }
+    }
+
+    .menu-right-wrapper {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                margin-left: 20px;
+                @include xsm-screen {
+                    margin-left: 15px;
+                }
+                &:first-child {
+                    margin-left: 0px;
+                }
+                &:nth-child(3) {
+                    @include md-screen {
+                        display: block;
+                        visibility: visible;
+                    }
+                }
+                &:last-child {
+                        display: none;
+                        visibility: hidden;
+                    @include md-screen {
+                        display: block;
+                        visibility: visible;
+                    }
+                }
+                .sidebar-menu-show-hide {
+                    background: hsl(var(--base));
+                    padding: 9px 12px;
+                    color: hsl(var(--white));
+                    border-radius: 3px;
+                }
+               @include md-screen {
+                a i {
+                    margin-top: 8px;
+                }
+               }
+            }
+        }
+    }
+    .count-item {
+        position: absolute;
+        height: 19px;
+        width: 19px;
+        background: hsl(var(--base));
+        text-align: center;
+        border-radius: 50%;
+        font-size: 13px;
+        color: hsl(var(--white));
+        top: -8px;
+        right: -10px;
+        font-weight: 600;
+        line-height: 19px;
+        @include md-screen {
+            top: -4px;
+        }
+    }
+}
+
+.menu-search-wrap {
+    position: relative;
+    width: 10px;
+    .menu-search-wrap--search-icon {
+        cursor: pointer;
+        i {
+            font-size: 17px;
+            color: hsl(var(--black));;
+        }
+    }
+    .header-search-hide-show {
+        display: none;
+        transition: all .4s ease-in-out;
+        &.show {
+            display: block;
+            right: -18px;
+            transition: all .4s ease-in-out;
+        }
+    }
+    .close-hide-show {
+        display: none;
+        &.show{
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+.search-box.header-search {
+    width: 260px;
+    position: absolute;
+    right: -7px;
+    top: 35px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+    @include xsm-screen {
+        width: 170px;
+    }
+    input.form--control {
+        padding-right: 52px;
+        border: 1px solid hsl(var(--base)/.2);
+        &::placeholder {
+            color: hsl(var(--dark));
+        }
+    }
+
+    button.search-box__button {
+        top: 27px;
+        right: 0;
+        background: hsl(var(--base));
+        height: 100%;
+        color: hsl(var(--dark));
+        padding: 14px;
+        border-radius: 0 10px 10px 0px;
+        border: 1px solid hsl(var(--white)/.5);
+        i {
+            color: hsl(var(--white));
+        }
+    }
+    .form--control {
+        background: hsl(var(--base));
+    }
+}
+.menu-search-wrap .menu-search-wrap--search-icon i {
+    font-size: 17px;
+    color: hsl(var(--black));
+    margin-top: 4px;
+    position: absolute;
+    margin-left: 13px;
+}
+
+/*========== Sticky Menu Css ========*/
+.header.fixed-header {
+    .header-wrapper .menu-wrapper ul.main-menu a {
+        color: hsl(var(--black));
+        &:hover {
+            color: hsl(var(--base));
+        }
+        &.active {
+            color: hsl(var(--base));            
+        }
+    }
+    .light-dark-btn-wrap .mon-icon {
+        color: hsl(var(--black));
+    }
+    .menu-search-wrap .menu-search-wrap--search-icon i {
+        font-size: 17px;
+        color: hsl(var(--black));
+    }
+}
+
+
+
+
+

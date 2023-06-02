@@ -1,0 +1,81 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+<!-- ==================== Header tart Here ==================== -->
+@@include('../partials/_header-two.html')
+<!-- ==================== Header End Here ==================== -->
+
+@@include('../partials/_breadcumb.html', {
+    "breadcumbText": "Support Tickets"
+})
+
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard py-80 section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 pe-xl-4">
+                @@include('../partials/_sidebar-menu.html')
+            </div>
+            <div class="col-xl-9 col-lg-12">
+                <div class="dashboard-body">
+                    <div class="dashboard-body__bar">
+                        <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                    </div>
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="order-wrap">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="new-ticket text-end">
+                                            <a href="new-ticket.html" class="btn btn--base">New Ticket <i class="las la-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <table class="table table--responsive--lg">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Status</th>
+                                                <th>Priority</th>
+                                                <th>Last Reply</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Trx">[Ticket:#97666]</td>
+                                                <td data-label="Amount"><span class="badge badge--success"> Completed </span></td>
+                                                <td data-label="Description">Low</td>
+                                                <td data-label="Amount">1 month ago</td>
+                                                <td data-label="Remaining Blance" class="text-danger cursor-pointer"><i class="las la-trash"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Trx">[Ticket:#97666]</td>
+                                                <td data-label="Amount"><span class="badge badge--success"> Completed </span></td>
+                                                <td data-label="Description">Low</td>
+                                                <td data-label="Amount">1 month ago</td>
+                                                <td data-label="Remaining Blance" class="text-danger cursor-pointer"><i class="las la-trash"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Trx">[Ticket:#97666]</td>
+                                                <td data-label="Amount"><span class="badge badge--success"> Completed </span></td>
+                                                <td data-label="Description">Low</td>
+                                                <td data-label="Amount">1 month ago</td>
+                                                <td data-label="Remaining Blance" class="text-danger cursor-pointer"><i class="las la-trash"></i> Delete</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div> 
+<!-- ==================== Dashbaord End Here ==================== -->
+
+<!-- Footer -->
+@@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')

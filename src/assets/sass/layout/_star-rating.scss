@@ -1,0 +1,16 @@
+/*====================== Star Rating Style ====================*/
+.rating-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__item {
+        padding: 0 1px;
+        i {
+            color: #FFB21D;
+            font-size: 14px;
+        }
+    }
+    &__text {
+        color: hsl(var(--body-color));
+    }
+}

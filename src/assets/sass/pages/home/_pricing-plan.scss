@@ -1,0 +1,102 @@
+/*====================== Offer ====================*/
+// .pricing-plan {
+//     .square-shape-1 {
+//         position: absolute;
+//         left: -15px;
+//         top: -160px;
+//         z-index: -1;
+//         @include md-screen {
+//             top: -220px;
+//         }
+//         @include md-screen {
+//             display: none;
+//         }
+//     }
+// }
+
+.pricing-plan-item {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: var(--border-radius);
+    padding: 40px 30px 42px;
+    border: 1px solid hsl(var(--base)/.2);
+    transition: all .4s ease-in-out;
+    position: relative;
+    // background-color: hsl(var(--white));
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, hsl(var(--base)/.2) 100%);
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        right: -150px;
+        width: 180px;
+        height: 180px;
+        background-color: hsl(var(--base)/0.5);
+        opacity: 0.8;
+        filter: blur(40px);
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        // box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+        border: 1px solid hsl(var(--base)/.4);
+        transform: translateY(-3px);
+        .pricing-plan-item__top {
+            border-bottom: 1px solid hsl(var(--base)/0.4);
+        }
+    }
+    .pricing-plan-item {
+        &__top {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid hsl(var(--base)/.2);
+            .title {
+                font-size: 40px;
+                font-weight:  700;
+                margin-bottom: 0px;
+            }
+        }
+        &__price {
+            .title {
+                text-align: center;
+                font-weight: 600;
+                font-size: 35px;
+                margin-bottom: 20px;
+                span {
+                    font-size: 16px;
+                    color: hsl(var(--black)/.5);
+                }
+            }
+        }
+        &__list {
+            margin-bottom: 25px;
+            margin-left: 50px;
+            @include xxsm-screen {
+                margin-left: 0;
+            }
+            ul {
+                li {
+                    // border-bottom: 1px solid hsl(var(--black) /.1);
+                    padding-bottom: 8px;
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    display: flex;
+                    i {
+                        color: hsl(var(--base));
+                        margin-right: 10px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            text-align: center;
+            a {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}

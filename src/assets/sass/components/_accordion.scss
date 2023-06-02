@@ -1,0 +1,99 @@
+/*=========================== Accodion style start =============================*/
+.accordion-area {
+    position: relative;
+    z-index: 1;
+    // &::after {
+    //     position: absolute;
+    //     content: "";
+    //     height: 100%;
+    //     width: 100%;
+    //     z-index: -1;
+    //     background: hsl(var(--dark)/.98);
+    //     top: 0;
+    //     left: 0;
+    // }
+}
+.custom--accordion {
+    .accordion-item {
+        background-color: transparent !important;
+        overflow: hidden;
+        border-radius: 10px;
+        border-radius: var(--border-radius);
+        border: 1px solid hsl(var(--base)/.2);
+        &:not(:last-child) {
+            margin-bottom:20px;
+        }
+    }
+    .accordion-body {
+        padding: 20px;
+        background-color: hsl(var(--base)/0.03);
+        color: hsl(var(--dark)/.6); 
+        .text {
+            max-width: 60%;
+            @include msm-screen {
+                max-width: 100%;
+            }
+        }
+    }
+    &:first-of-type .accordion-button.collapsed {
+        border-radius:0px;  
+        font-weight: 500; 
+    }
+    &:last-of-type .accordion-button.collapsed {
+        border-radius: 0px; 
+        color: hsl(var(--body-color));  
+    }
+    .accordion-button{
+        background-color: hsl(var(--base)/0.03);
+        color: var(--heading-color);
+        font-size: 18px;
+        padding: 15px ;
+        @include msm-screen {
+            font-size: 18px;
+            padding: 13px;
+            padding-right: 30px;
+        }
+        &::after {
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:not(.collapsed) {
+            color: hsl(var(--body-color)); 
+            background-color:hsl(var(--base)/0.06) !important;
+            box-shadow: none;
+            border-bottom: 1px solid hsl(var(--base) /.09 );
+            font-weight: 500;
+            &::after {
+                transform: rotate(0deg);
+                background-image: none;
+                color: hsl(var(--base)); ; 
+            }
+        }
+        &[aria-expanded="true"], &[aria-expanded="false"] {
+            &::after {
+                font-family: "Line Awesome Free";
+                font-weight: 600;
+                content: "\f068";
+                display: inline-block;
+                position: relative;
+                margin-left: auto;
+                width: 0 !important;
+                right: 16px;
+                color: hsl(var(--base)) !important;
+                @include msm-screen {
+                    right: -13px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &[aria-expanded="false"] {
+            &::after {
+                content: "\f067";
+                color: hsl(var(--body-color));
+            }
+        }
+    }
+    
+}

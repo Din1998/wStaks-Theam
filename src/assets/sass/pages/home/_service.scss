@@ -1,0 +1,124 @@
+/*====================== How it works ====================*/
+.service-area .col-lg-4:nth-child(odd) .service {
+    margin-top: -30px;
+}
+.service {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: var(--border-radius);
+    padding: 30px 30px 35px;
+    border: 2px solid hsl(var(--base)/.07);
+    transition: all .4s ease-in-out;
+    text-align: start;
+    overflow: hidden;
+    display: flex;
+    @include xsm-screen {
+        flex-direction: column;
+    }
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+        border: 2px solid hsl(var(--base)/.4);
+        transform: translateY(-3px);
+        .service {
+            &__icon {
+                i {
+                    transform: scale(1.1);
+                }
+                &::before {
+                    background: hsl(var(--base)/0.3);
+                }
+            }
+        }
+    }
+    &__icon {
+        margin-bottom: 20px;
+        position: relative;
+        transition: all .6s ease-in-out;
+        i {
+            font-size: 27px;
+            color: hsl(var(--base));
+            margin-top: 2px;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            background: hsl(var(--base)/0.2);
+            line-height: 70px;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+        }
+    }
+    &__content  {
+        margin-left: 30px;
+        @include xsm-screen {
+            margin-left: 0;
+        }
+        h3 {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 11px;
+        }
+    }
+}
+
+/*======== Service single pages ======== */
+
+.single-service-area .section-heading {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.single-service-area .section-heading:before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 94%;
+    background: hsl(var(--base)/0.09);
+    z-index: -1;
+    border-radius: 5px;
+    left: 78px
+}
+
+.single-service {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    border: 2px solid hsl(var(--base)/.07);
+    transition: all .4s ease-in-out;
+    text-align: start;
+    overflow: hidden;
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+        border: 2px solid hsl(var(--base)/.4);
+        transform: translateY(-3px);
+
+    }    
+    &__icon {
+        margin-bottom: 10px;
+        position: relative;
+        transition: all .6s ease-in-out;
+        i {
+            font-size: 27px;
+            color: hsl(var(--base));
+            margin-top: 2px;
+            text-align: center;
+            transition: transform 0.5s ease;
+        }
+    }
+    &__content  {
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            text-transform: capitalize;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 11px;
+        }
+    }
+}

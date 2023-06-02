@@ -1,0 +1,84 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+<!-- ==================== Header tart Here ==================== -->
+@@include('../partials/_header-two.html')
+<!-- ==================== Header End Here ==================== -->
+
+@@include('../partials/_breadcumb.html', {
+    "breadcumbText": "Transaction"
+})
+
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard py-80 section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 pe-xl-4">
+                @@include('../partials/_sidebar-menu.html')
+            </div>
+            <div class="col-xl-9 col-lg-12">
+                <div class="dashboard-body">
+                    <div class="dashboard-body__bar">
+                        <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                    </div>
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="order-wrap">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-4 mb-3">
+                                        <form action="#" autocomplete="off">
+                                            <div class="search-box w-100">
+                                                <input type="text" class="form--control" placeholder="Search...">
+                                                <button type="submit" class="search-box__button"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <table class="table table--responsive--lg">
+                                    <thead>
+                                        <tr>
+                                            <th>Trx</th>
+                                            <th>Transacted</th>
+                                            <th>Amount</th>
+                                            <th>Post Balance</th>
+                                            <th>Detail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Trx">Trxlfjgld</td>
+                                            <td data-label="Transacted">Trfo85ut</td>
+                                            <td data-label="Post Balance">$2000.00</td>
+                                            <td data-label="Amount">$100.00</td>
+                                            <td data-label="Detail"><a class="btn btn--base btn--sm" href="transaction-details.html"><i class="las la-desktop"></i> View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Trx">Trxlfjgld</td>
+                                            <td data-label="Transacted">Trfo85ut</td>
+                                            <td data-label="Post Balance">$2000.00</td>
+                                            <td data-label="Amount">$100.00</td>
+                                            <td data-label="Detail"><a class="btn btn--base btn--sm" href="transaction-details.html"><i class="las la-desktop"></i> View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Trx">Trxlfjgld</td>
+                                            <td data-label="Transacted">Trfo85ut</td>
+                                            <td data-label="Post Balance">$2000.00</td>
+                                            <td data-label="Amount">$100.00</td>
+                                            <td data-label="Detail"><a class="btn btn--base btn--sm" href="transaction-details.html"><i class="las la-desktop"></i> View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div> 
+<!-- ==================== Dashbaord End Here ==================== -->
+
+<!-- Footer -->
+@@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')

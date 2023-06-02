@@ -1,0 +1,85 @@
+/*====================== Experience ====================*/
+.experience-area {
+    // .col-lg-3:nth-child(even) .experience{
+    //     margin-top: 40px;
+    //     background-color: hsl(var(--base)/.1);
+    //     @include sm-screen {
+    //         margin-top: 0;
+    //     }
+    // }
+}
+
+.experience {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: var(--border-radius);
+    padding: 30px 30px 35px;
+    border: 2px solid hsl(var(--base)/.4);
+    transition: all .4s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(var(--white));
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -70px;
+        width: 170%;
+        height: 100%;
+        background: hsl(var(--base)/.1);
+        transform: rotate(144deg);
+        z-index: 1;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -82px;
+        width: 170%;
+        height: 106%;
+        background: hsl(var(--base)/0.1);
+        transform: rotate(216deg);
+        z-index: 1;
+    }
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+        border: 2px solid hsl(var(--base)/.1);
+        transform: translateY(-3px);
+    }
+    &__icon {
+        margin-bottom: 15px;
+        i {
+            font-size: 25px;
+            background: hsl(var(--base)/.2);
+            color: hsl(var(--base));
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    &__count {
+        margin-bottom: 10px;
+        position: relative;
+        transition: all .6s ease-in-out;
+        h3 {
+            font-size: 32px;
+            color: hsl(var(--dark));
+            margin-top: 2px;
+            text-align: center;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+            font-weight: 700;
+            margin: auto;
+        }
+    }
+    &__content  {
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: hsl(var(--black)/.8);
+        }
+    }
+}

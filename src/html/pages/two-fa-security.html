@@ -1,0 +1,78 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+<!-- ==================== Header tart Here ==================== -->
+@@include('../partials/_header-two.html')
+<!-- ==================== Header End Here ==================== -->
+
+@@include('../partials/_breadcumb.html', {
+    "breadcumbText": "2Fa Authenticator"
+})
+
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard py-80 section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 pe-xl-4">
+                @@include('../partials/_sidebar-menu.html')
+            </div>
+            <div class="col-xl-9 col-lg-12">
+                <div class="dashboard-body">
+                    <div class="dashboard-body__bar">
+                        <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                    </div>
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="card custom--card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Add Your Account</h5>
+                                </div>
+            
+                                <div class="card-body">
+                                    <h6 class="mb-3">Use the QR code or setup key on your Google Authenticator app to add your account.</h6>
+            
+                                    <div class="form-group mx-auto text-center">
+                                        <img class="mx-auto" src="assets/images/thumbs/twofa.png">
+                                    </div>
+            
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="key">Setup Key</label>
+                                        <div class="input-group">
+                                            <input type="text"  value="HJGHTYGHJGHGH" class="form-control form--control " readonly="" id="key">
+                                            <button type="button" class="input-group-text copytext" id="copyBoard"> <i class="fa fa-copy"></i> </button>
+                                        </div>
+                                    </div>
+            
+                                    <label><i class="fa fa-info-circle"></i> Help</label>
+                                    <p>Google Authenticator is a multifaceted application for cell phones. It creates coordinated codes utilized during the 2-step confirmation process. To utilize Google Authenticator, introduce the Google Authenticator application on your cell phone. <a class="text--base" href="javascript: void(0)" target="_blank">Download</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5">
+                            <div class="card custom--card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Enable 2FA Security</h5>
+                                </div>
+                                <form action="" method="POST">
+                                    <div class="card-body">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label required" for="code">Google Authenticatior OTP</label>
+                                            <input type="text" class="form--control" name="code" required="" id="code">
+                                        </div>
+                                        <button type="submit" class="btn btn--base h-45 w-100">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div> 
+<!-- ==================== Dashbaord End Here ==================== -->
+
+<!-- Footer -->
+@@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')
