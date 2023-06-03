@@ -2,7 +2,7 @@
 .banner-section {
     position: relative;
     z-index: 1;
-    padding: 260px 0 220px;
+    padding: 260px 0 120px;
     // background: hsl(var(--base)/.1);
     overflow: hidden;
     .banner-effect-1 {
@@ -14,7 +14,7 @@
         height: 415px;
         background-color: hsl(var(--base)/.5);
         opacity: 0.8;
-        filter: blur(70px);
+        filter: blur(90px);
         border-radius: 50%;
         z-index: -1;
         transform: translate(-50%, -50%);
@@ -28,7 +28,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: hsl(var(--base)/.1);
+        background: hsl(var(--base)/.01);
         top: 0;
         left: 0;
         z-index: -1;
@@ -285,3 +285,15 @@
     right: -28px;
     bottom: -29px;
 }
+
+.banner__img{
+    border-radius: 12px;
+    animation: animate 2s infinite ease alternate !important;
+}
+
+@keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+  }
+

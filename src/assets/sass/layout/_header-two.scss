@@ -108,6 +108,8 @@
             align-items: center;
             li {
                 margin-left: 20px;
+                
+                
                 @include xsm-screen {
                     margin-left: 15px;
                 }
@@ -227,7 +229,7 @@
 }
 .menu-search-wrap .menu-search-wrap--search-icon i {
     font-size: 17px;
-    color: hsl(var(--black));
+    color: hsl(var(--base));
     margin-top: 4px;
     position: absolute;
     margin-left: 13px;
@@ -245,7 +247,8 @@
         }
     }
     .light-dark-btn-wrap .mon-icon {
-        color: hsl(var(--black));
+    
+        color: hsl(var(--base));
     }
     .menu-search-wrap .menu-search-wrap--search-icon i {
         font-size: 17px;

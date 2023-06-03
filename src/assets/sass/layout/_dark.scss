@@ -86,7 +86,13 @@
   }
 
   .light-dark-btn-wrap {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
     .sun-icon  {
+        font-size: 28px;
         display: none;
         color: hsl(var(--white));
         &.show {
@@ -94,10 +100,23 @@
         }
     }
     .mon-icon {
-        font-size: 16px;
+        font-size: 28px;
         color: hsl(var(--black));
         &.show {
             display: none;
         }
     }
+  }
+
+.light-dark-btn-wrap :hover{
+    transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
   }

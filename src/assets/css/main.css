@@ -980,7 +980,7 @@
     align-items: center;
     border-radius: 50%;
     transition: 0.2s linear;
-    background-color: hsl(var(--base));
+    background-color: hsl(var(--base/0.1));
     color: hsl(var(--white));
     font-size: 20px;
 }
@@ -1052,7 +1052,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 4px;
     transition: 0.4s;
     background-color: hsl(var(--base));
     color: hsl(var(--white));
@@ -4574,7 +4574,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .menu-search-wrap .menu-search-wrap--search-icon i {
     font-size: 17px;
-    color: hsl(var(--black));
+    color: hsl(var(--base));
     margin-top: 4px;
     position: absolute;
     margin-left: 13px;
@@ -4594,7 +4594,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .header.fixed-header .light-dark-btn-wrap .mon-icon {
-    color: hsl(var(--black));
+    color: hsl(var(--base));
 }
 
 .header.fixed-header .menu-search-wrap .menu-search-wrap--search-icon i {
@@ -7758,7 +7758,16 @@ ul.list.d-flex.message-send__history {
     transform: translateX(15px);
 }
 
+.light-dark-btn-wrap {
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
 .light-dark-btn-wrap .sun-icon {
+    font-size: 28px;
     display: none;
     color: hsl(var(--white));
 }
@@ -7768,12 +7777,25 @@ ul.list.d-flex.message-send__history {
 }
 
 .light-dark-btn-wrap .mon-icon {
-    font-size: 16px;
+    font-size: 28px;
     color: hsl(var(--black));
 }
 
 .light-dark-btn-wrap .mon-icon.show {
     display: none;
+}
+
+.light-dark-btn-wrap :hover {
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 /*================= New letter popup ================*/
@@ -7934,11 +7956,50 @@ ul.list.d-flex.message-send__history {
     transition-delay: 0.2s;
 }
 
+.course-type {
+    border: 2px dashed hsl(var(--base));
+    border-radius: 24px;
+}
+
+.course-type .course-icon {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-type .catagorie__logo {
+    height: 80px;
+    width: 80px;
+}
+
+.blog-item__title {
+    text-align: center;
+}
+
+.course-type__text {
+    text-align: center !important;
+}
+
+.cours-item__content {
+    padding: 12px 0px 52px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-form {
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px dashed hsl(var(--base));
+}
+
 /*============= Banner area start  =============*/
 .banner-section {
     position: relative;
     z-index: 1;
-    padding: 260px 0 220px;
+    padding: 260px 0 120px;
     overflow: hidden;
 }
 
@@ -7951,7 +8012,7 @@ ul.list.d-flex.message-send__history {
     height: 415px;
     background-color: hsl(var(--base)/0.5);
     opacity: 0.8;
-    filter: blur(70px);
+    filter: blur(90px);
     border-radius: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
@@ -7968,7 +8029,7 @@ ul.list.d-flex.message-send__history {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: hsl(var(--base)/0.1);
+    background: hsl(var(--base)/0.01);
     top: 0;
     left: 0;
     z-index: -1;
@@ -8341,6 +8402,16 @@ ul.list.d-flex.message-send__history {
     bottom: -29px;
 }
 
+.banner__img {
+    border-radius: 12px;
+    animation: animate 2s infinite ease alternate !important;
+}
+
+@keyframes animate {
+    to {
+        transform: translateY(20px);
+    }
+}
 /*====================== About Section====================*/
 .about-section {
     overflow: hidden;
@@ -9925,7 +9996,7 @@ ul.list.d-flex.message-send__history {
 .blog-item__thumb {
     overflow: hidden;
     border-radius: 0px;
-    max-height: 300px;
+    max-height: 400px;
 }
 
 .blog-item__thumb img {
@@ -10033,6 +10104,18 @@ ul.list.d-flex.message-send__history {
 .blog-bottom-wrap .comments-like span i {
     color: hsl(var(--base));
     font-size: 14px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /*============= Video Start Here =======================*/

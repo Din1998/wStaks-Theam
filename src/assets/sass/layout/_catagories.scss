@@ -1,0 +1,36 @@
+.course-type{
+    border: 2px dashed  hsl(var(--base));
+    border-radius: 24px;
+    .course-icon{
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .catagorie__logo{
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
+.blog-item__title{
+    text-align: center;
+}
+.course-type__text{
+    text-align: center !important;
+}
+.cours-item__content{
+    padding: 12px 0px 52px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-form{
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px dashed  hsl(var(--base));
+}
+

@@ -22,7 +22,7 @@
     &__thumb {
         overflow: hidden;
         border-radius: 0px;
-        max-height: 300px;
+        max-height: 400px;
         img {
             transition: .3s linear;
             border-radius: 0;
@@ -116,5 +116,19 @@
 }
 
 
+// reveal animation
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .reveal.active{
+  
+      transform: translateY(0);
+      opacity: 1;
+      
+  }
 
