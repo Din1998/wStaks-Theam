@@ -7995,6 +7995,22 @@ ul.list.d-flex.message-send__history {
     border: 2px dashed hsl(var(--base));
 }
 
+.button__hover--Effect {
+    padding: 12px 28px 12px 28px;
+    border: 1px solid hsl(var(--base));
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #f0dc00 !important;
+    background: linear-gradient(#0a1233 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+    transition: 0.4s, background-position 0s;
+}
+
+.button__hover--Effect:hover {
+    --p: 100%;
+    color: white;
+}
+
 /*============= Banner area start  =============*/
 .banner-section {
     position: relative;
