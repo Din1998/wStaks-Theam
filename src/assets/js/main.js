@@ -568,7 +568,8 @@ function reveal() {
   for(let i = 0; i < reveals.length; i++){
     const windowHight = window.innerHeight;
     const revealTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 50;
+    const revealPoint = 40;
+    console.log(revealPoint)
     if(revealTop < windowHight - revealPoint){
       reveals[i].classList.add('active')
     }

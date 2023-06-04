@@ -1,0 +1,33 @@
+.teacher__itemImg--container{
+
+    .teacher__img{
+        height: 240px;
+        width: 240px;
+        border: 12px solid hsl(var(--base)/0.5);
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+       text-align: center;
+    }
+    img{
+        height: 100%;
+        max-width: 100%;
+
+    }
+}
+.techer__item--container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.techer__item--container:hover{
+    transform:translateY(-8px);
+    transition: 0.6s ease-in-out;
+  }
+

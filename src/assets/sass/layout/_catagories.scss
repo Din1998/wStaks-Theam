@@ -1,31 +1,45 @@
-.course-type{
+.course-type {
     border: 2px dashed  hsl(var(--base));
     border-radius: 24px;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+    &:hover{
+        transform:translateY(-8px);
+        transition: 0.6s ease-in-out;
+    }
     .course-icon{
         padding: 40px 0px 0px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .catagorie__logo{
-        height: 80px;
-        width: 80px;
+    .catagorie{
+        &__logo{
+            height: 80px;
+            width: 80px;
+        }
     }
-
 }
 
-.blog-item__title{
-    text-align: center;
+.blog-item {
+    &__title{
+        text-align: center;
+    }
 }
-.course-type__text{
-    text-align: center !important;
+.course-type {
+    &__text{
+        text-align: center !important;
+    }
 }
-.cours-item__content{
-    padding: 12px 0px 52px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cours-item {
+    &__content{
+        padding: 12px 0px 52px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .course-form{
@@ -35,12 +49,6 @@
 }
 
 .button__hover--Effect{
-    padding: 12px 28px 12px 28px;
-    border: 1px solid  hsl(var(--base));
-    font-size: 20px;
-    cursor: pointer;
-    color: black;
-    background-color: #f0dc00 !important;
     background: linear-gradient(#0a1233 0 0) var(--p, 0) / var(--p, 0) no-repeat ;
     transition: .4s, background-position 0s;
   }
