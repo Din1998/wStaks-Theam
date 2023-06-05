@@ -8023,6 +8023,11 @@ ul.list.d-flex.message-send__history {
     cursor: pointer;
 }
 
+.featured__item:hover {
+    transform: translateY(-8px);
+    transition: 0.6s ease-in-out;
+}
+
 .featured__item .itemImg {
     width: 100%;
 }
@@ -8032,11 +8037,7 @@ ul.list.d-flex.message-send__history {
     width: 100%;
 }
 
-.blog-item__title {
-    text-align: center;
-}
-
-.featured-item__content {
+.featured__item .featured-item__content {
     padding: 12px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -8044,15 +8045,35 @@ ul.list.d-flex.message-send__history {
     align-items: center;
 }
 
-.featured__item--container:hover {
-    transform: translateY(-8px);
-    transition: 0.6s ease-in-out;
+.featured__item .featured-item__content .blog-item__title {
+    text-align: center;
 }
 
-.course-form {
-    padding: 12px;
-    border-radius: 12px;
-    border: 2px dashed hsl(var(--base));
+.featured__item .author__content {
+    padding: 0px 0px 12px 24px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.featured__item .author__content .author__img {
+    padding: 8px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.featured__item .author__content p {
+    padding: 0px 0px 0px 8px;
+}
+
+.featured__item .entry-meta {
+    padding: 0px 24px 12px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured__item .entry-meta .student__member--icon {
+    color: #f0dc00;
 }
 
 .button__hover--Effect {
@@ -8069,33 +8090,6 @@ ul.list.d-flex.message-send__history {
 .button__hover--Effect:hover {
     --p: 100%;
     color: white;
-}
-
-.author__content {
-    padding: 0px 0px 12px 24px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.author__content .author__img {
-    padding: 8px;
-    width: 60px;
-    border-radius: 50%;
-}
-
-.author__content p {
-    padding: 0px 0px 0px 8px;
-}
-
-.entry-meta {
-    padding: 0px 24px 12px 0px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.entry-meta .student__member--icon {
-    color: #f0dc00;
 }
 
 .teacher__itemImg--container .teacher__img {
@@ -8127,6 +8121,36 @@ ul.list.d-flex.message-send__history {
 .techer__item--container:hover {
     transform: translateY(-8px);
     transition: 0.6s ease-in-out;
+}
+
+.review-card__container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -9px 9px 10px -7px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: -9px 9px 10px -7px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: -9px 9px 10px -7px rgba(0, 0, 0, 0.47);
+    border-radius: 24px;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.review-card .avatar {
+    display: flex;
+    justify-content: right;
+}
+
+.review-card .avatar .avatar-img {
+    border: 4px solid hsl(var(--base)/0.5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0px 12px 0px 12px;
+}
+
+.review-card .avatar .avatar-img img {
+    width: 80px;
 }
 
 /*============= Banner area start  =============*/
@@ -10242,7 +10266,7 @@ ul.list.d-flex.message-send__history {
 
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(80px);
     opacity: 0;
     transition: all 1s ease;
 }
@@ -10506,6 +10530,33 @@ ul.list.d-flex.message-send__history {
 
 .product-card__cupon span:hover {
     color: hsl(var(--base));
+}
+
+.goal-item .itemImg img {
+    border-radius: 24px;
+}
+
+.goal-item__content {
+    border-radius: 24px;
+    box-shadow: -9px 9px 10px -7px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: -9px 9px 10px -7px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: -9px 9px 10px -7px rgba(0, 0, 0, 0.47);
+    padding: 20px;
+}
+
+.goal-item__content .subtitle {
+    color: hsl(var(--base));
+}
+
+.progress-section {
+    background: hsl(var(--base)/0.5);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.progress-section .counter-no {
+    display: inline-flex;
 }
 
 /*=================== Blog Details =========*/
